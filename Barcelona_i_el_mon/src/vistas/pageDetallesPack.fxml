@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="470.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vistas.PageDetallesPackController">
+   <children>
+      <TableView fx:id="tableCarritoPack" layoutX="22.0" layoutY="21.0" onMouseClicked="#quitarActividad" prefHeight="246.0" prefWidth="700.0" AnchorPane.bottomAnchor="224.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+            <TableColumn fx:id="NombreActividad" editable="false" prefWidth="176.0" styleClass="columnaCentrada" text="Actividad" />
+            <TableColumn fx:id="precioUnitario" editable="false" prefWidth="86.0" styleClass="columnaCentrada" text="€ persona /día" />
+            <TableColumn fx:id="inicio" editable="false" prefWidth="100.0" styleClass="columnaCentrada" text="Inicio" />
+            <TableColumn fx:id="fin" editable="false" prefWidth="100.0" styleClass="columnaCentrada" text="Fin" />
+            <TableColumn fx:id="duracion" editable="false" prefWidth="61.0" styleClass="columnaCentrada" text="Duración" />
+            <TableColumn fx:id="numPlazas" editable="false" prefWidth="61.0" styleClass="columnaCentrada" text="Nº Plazas" />
+            <TableColumn fx:id="precioActividad" editable="false" prefWidth="104.0" styleClass="columnaCentrada" text="€ Actividad" />
+        </columns>
+      </TableView>
+      <Button fx:id="confirmarPack" layoutX="417.0" layoutY="338.0" mnemonicParsing="false" onMouseClicked="#enviarPackBD" prefHeight="36.0" prefWidth="191.0" stylesheets="@../css/estilos.css" text="Confirmar Pack">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <styleClass>
+            <String fx:value="botonPrimary" />
+            <String fx:value="sombraGrid" />
+         </styleClass></Button>
+      <Label layoutX="444.0" layoutY="293.0" prefHeight="19.0" prefWidth="112.0" styleClass="destacar" stylesheets="@../css/estilos.css" text="Precio Total Pack:" />
+      <Label fx:id="labelPrecioTotal" layoutX="561.0" layoutY="293.0" prefHeight="18.0" prefWidth="76.0" styleClass="destacar" stylesheets="@../css/estilos.css" text="0 €" />
+      <Label fx:id="labelDuracionPack" layoutX="135.0" layoutY="418.0" prefHeight="18.0" prefWidth="390.0" text="0 años , 0 días, 0 horas." />
+      <Label layoutX="24.0" layoutY="291.0" text="Nombre del Pack" />
+      <Label layoutX="22.0" layoutY="377.0" text="Fecha de validez" />
+      <Label layoutX="22.0" layoutY="335.0" text="Fecha de creación" />
+      <TextField fx:id="nombrePack" layoutX="136.0" layoutY="287.0" />
+      <Label layoutX="287.0" layoutY="258.0" styleClass="labelDestacar" stylesheets="@../css/estilos.css" text="Información del pack" />
+      <Label layoutX="22.0" layoutY="418.0" text="Duración del Pack" />
+      <DatePicker fx:id="validezPack" editable="false" layoutX="135.0" layoutY="373.0" onAction="#actualizarLabel">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></DatePicker>
+      <DatePicker fx:id="creacionPack" editable="false" layoutX="135.0" layoutY="331.0" onAction="#actualizarFechaValidez">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></DatePicker>
+   </children>
+</AnchorPane>

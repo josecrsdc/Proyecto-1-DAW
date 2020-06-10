@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vistas.PageDondeDormirController">
+   <children>
+      <Pane fx:id="paneFiltros" prefHeight="470.0" prefWidth="154.0" styleClass="panel" stylesheets="@../css/estilos.css">
+         <children>
+            <Label layoutX="6.0" layoutY="146.0" text="Filtrado por:" />
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="14.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="32.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="50.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="68.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="86.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="14.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="32.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="50.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="68.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="86.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="14.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="32.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="50.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="68.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="86.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="14.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="32.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="50.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="68.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="86.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="14.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="32.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="50.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="68.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="25.0" layoutX="86.0" layoutY="259.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_star_48px_1.png" />
+               </image>
+            </ImageView>
+            <CheckBox fx:id="puntuacionCinco" layoutX="108.0" layoutY="172.0" mnemonicParsing="false" onAction="#aplicarFiltro" scaleX="0.8" scaleY="0.8" />
+            <CheckBox fx:id="puntuacionCuatro" layoutX="108.0" layoutY="195.0" mnemonicParsing="false" onAction="#aplicarFiltro" scaleX="0.8" scaleY="0.8" />
+            <CheckBox fx:id="puntuacionTres" layoutX="108.0" layoutY="217.0" mnemonicParsing="false" onAction="#aplicarFiltro" scaleX="0.8" scaleY="0.8" />
+            <CheckBox fx:id="puntuacionDos" layoutX="108.0" layoutY="240.0" mnemonicParsing="false" onAction="#aplicarFiltro" scaleX="0.8" scaleY="0.8" />
+            <CheckBox fx:id="puntuacionUno" layoutX="108.0" layoutY="262.0" mnemonicParsing="false" onAction="#aplicarFiltro" scaleX="0.8" scaleY="0.8" />
+            <Line endX="-122.0" endY="-159.0" layoutX="262.0" layoutY="186.0" startX="-122.0" startY="249.0" stroke="#6b6b6b" styleClass="sombraSeparador" />
+         </children>
+      </Pane>
+      <ScrollPane fx:id="scrollPaneDondeDormir" layoutX="174.0" prefHeight="470.0" prefWidth="546.0" styleClass="panel" stylesheets="@../css/estilos.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="154.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <content>
+          <AnchorPane fx:id="anchorScrollDondeDormir" minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="529.0" styleClass="panel" stylesheets="@../css/estilos.css" />
+        </content>
+      </ScrollPane>
+      <Pane fx:id="infoActividad" prefHeight="470.0" prefWidth="700.0" style="-fx-background-color: white;" visible="false">
+         <children>
+            <Label fx:id="nombreActividad" layoutX="249.0" layoutY="33.0" styleClass="nombreActividad" stylesheets="@../css/estilos.css" text="Nombre de la Actividad" translateX="-10.0" translateY="-9.0" />
+            <Label fx:id="descripcionActividad" alignment="TOP_LEFT" layoutX="249.0" layoutY="80.0" prefHeight="109.0" prefWidth="438.0" text="Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó " textAlignment="JUSTIFY" translateX="-10.0" translateY="-9.0" wrapText="true" />
+            <DatePicker fx:id="calendarioActividadInicio" editable="false" layoutX="48.0" layoutY="279.0" onAction="#controlFechaInicio" translateX="-10.0" translateY="-9.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </DatePicker>
+            <Label layoutX="48.0" layoutY="254.0" text="Fecha de reserva inicio" translateX="-10.0" translateY="-9.0" />
+            <Label layoutX="315.0" layoutY="254.0" text="Hora de reserva inicio" translateX="-10.0" translateY="-9.0" />
+            <Button fx:id="bAgregarActividad" layoutX="533.0" layoutY="410.0" mnemonicParsing="false" onAction="#agregarActividad" stylesheets="@../css/estilos.css" text="Agregar actividad" translateX="-10.0" translateY="-9.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="botonPrimary" />
+                  <String fx:value="sombraGrid" />
+               </styleClass>
+            </Button>
+            <Label layoutX="555.0" layoutY="254.0" text="Num. de plazas" translateX="-10.0" translateY="-9.0" />
+            <Spinner fx:id="numPlazasActividad" layoutX="565.0" layoutY="279.0" onMouseClicked="#actualizarPlazas" prefHeight="25.0" prefWidth="62.0" translateX="-10.0" translateY="-9.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Spinner>
+            <DatePicker fx:id="calendarioActividadFin" editable="false" layoutX="48.0" layoutY="349.0" onAction="#controlFechaInicio" translateX="-10.0" translateY="-9.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </DatePicker>
+            <Label layoutX="48.0" layoutY="321.0" text="Fecha de reserva fin" translateX="-10.0" translateY="-9.0" />
+            <Label layoutX="315.0" layoutY="321.0" text="Hora de reserva fin" translateX="-10.0" translateY="-9.0" />
+            <Hyperlink fx:id="urlActividad" layoutX="615.0" layoutY="218.0" onAction="#irAWeb" text="Ir a la web" translateX="-10.0" translateY="-9.0" />
+            <Slider fx:id="sliderPrecio" blockIncrement="1.0" layoutX="51.0" layoutY="422.0" majorTickUnit="10.0" onMouseClicked="#actualizarPrecio" onMouseDragged="#actualizarPrecio" prefHeight="37.0" prefWidth="392.0" showTickLabels="true" showTickMarks="true" translateX="-10.0" translateY="-9.0" value="30.0">
+               <cursor>
+                  <Cursor fx:constant="H_RESIZE" />
+               </cursor>
+            </Slider>
+            <ComboBox fx:id="horaActividadInicio" layoutX="315.0" layoutY="279.0" onAction="#controlFechaInicio" prefHeight="25.0" prefWidth="125.0" translateX="-10.0" translateY="-9.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <ComboBox fx:id="horaActividadFin" layoutX="315.0" layoutY="349.0" onAction="#controlFechaInicio" prefHeight="25.0" prefWidth="125.0" translateX="-10.0" translateY="-9.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ComboBox>
+            <Label layoutX="486.0" layoutY="189.0" prefWidth="146.0" text="La distancia al centro es de " translateX="-10.0" translateY="-9.0" />
+            <Label fx:id="distanciaCentroActividad" layoutX="643.0" layoutY="189.0" prefHeight="17.0" prefWidth="44.0" text="20 km" translateX="-10.0" translateY="-9.0" />
+            <Label layoutX="250.0" layoutY="221.0" styleClass="labelDestacar" stylesheets="@../css/estilos.css" text="¿Cuándo quieres reservar la actividad?" translateX="-10.0" translateY="-9.0" />
+            <ImageView fx:id="bCancelarActividad" fitHeight="22.0" fitWidth="25.0" layoutX="40.0" layoutY="28.0" onMouseClicked="#cancelarAñadirActividad" pickOnBounds="true" translateX="-10.0" translateY="-9.0">
+               <image>
+                  <Image url="@../recursos/imagenes/arrow_left.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="fotoActividad" fitHeight="150.0" fitWidth="174.0" layoutX="58.0" layoutY="73.0" pickOnBounds="true" translateX="-10.0" translateY="-9.0">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_new_york_80px.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="puntuacionActividad" alignment="CENTER" layoutX="202.0" layoutY="201.0" prefHeight="36.0" prefWidth="38.0" styleClass="numPuntuacion" stylesheets="@../css/estilos.css" text="5" translateX="-10.0" translateY="-9.0" />
+            <Label layoutX="47.0" layoutY="377.0" prefHeight="30.0" prefWidth="115.0" styleClass="destacar" stylesheets="@../css/estilos.css" text="Establece precio: " />
+            <Label fx:id="labelPrecio" layoutX="170.0" layoutY="377.0" prefHeight="30.0" prefWidth="60.0" styleClass="destacar" stylesheets="@../css/estilos.css" text="30 €" />
+            <Label layoutX="305.0" layoutY="377.0" prefHeight="30.0" prefWidth="100.0" styleClass="destacar" stylesheets="@../css/estilos.css" text="Núm. de días: " />
+            <Label fx:id="numDiasActividad" layoutX="400.0" layoutY="377.0" prefHeight="30.0" prefWidth="44.0" styleClass="destacar" stylesheets="@../css/estilos.css" text="1" />
+         </children></Pane>
+   </children>
+</AnchorPane>

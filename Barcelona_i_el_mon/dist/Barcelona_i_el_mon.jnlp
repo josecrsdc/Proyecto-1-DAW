@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Barcelona_i_el_mon.jnlp">
+    <information>
+        <title>Barcelona_i_el_mon</title>
+        <vendor>Jose</vendor>
+        <description>null</description>
+        <offline-allowed/>
+    </information>
+    <update check="always"/>
+    <resources>
+        <j2se version="10.0.2+" href="http://java.sun.com/products/autodl/j2se"/>
+        <jar href="Barcelona_i_el_mon.jar" size="3269513" download="eager"/>
+        <jar href="lib\controlsfx-8.40.11.jar" size="985420" download="eager"/>
+        <jar href="lib\mysql-connector-java-8.0.19.jar" size="2356711" download="eager"/>
+    </resources>
+    <jfx:javafx-desc width="800" height="600" main-class="vistas.Prototipo_v1" name="Prototipo_v1"/>
+</jnlp>
+

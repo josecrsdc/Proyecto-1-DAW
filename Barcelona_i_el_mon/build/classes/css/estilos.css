@@ -1,0 +1,137 @@
+
+/*//////////////////////////////////////////////////////////////////////////////
+///////////////////////////    BOTONES    //////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////*/
+
+.buttonMenu{
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 0 0 2px 0;
+    -fx-text-fill: white;
+    -fx-padding: 0 0 -22px 0;
+    -fx-font-size: 17px;
+}
+
+.buttonMenuDesplegable{
+    -fx-background-color: transparent;
+    -fx-border-color: white;
+    -fx-border-width: 0 0 2px 0;
+    -fx-text-fill: white;
+    -fx-padding: 0 0 -22px 0;
+    -fx-font-size: 14px;
+}
+
+.botonPrimary{
+    -fx-background-color: #5cb85c;
+    -fx-text-fill: white;
+    -fx-padding: 8px;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+.botonPrimaryRed{
+    -fx-background-color: #E63A40;
+    -fx-text-fill: white;
+    -fx-padding: 8px;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+.botonImagenes{
+    -fx-background-color: #494949;
+    -fx-text-fill: white;
+    -fx-padding: 6px;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////
+///////////////////////////    TEXTOS     //////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////*/
+
+.topBar{
+    -fx-background-color: white;
+    -fx-effect: dropshadow(three-pass-box, black, 10, 0.0, 2px,2px);
+    -fx-font-size: 15px;
+}
+
+.tituloActividad{
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-pref-width: 180;
+    -fx-alignment: CENTER;
+    -fx-wrap-text: true;
+}
+
+.puntuacionActividad{
+    -fx-text-fill: white;
+    -fx-alignment: center;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+#cantidadCarrito{
+    -fx-text-fill: white;
+    -fx-background-radius: 25px;
+    -fx-background-color: red;
+    -fx-alignment: center;
+    -fx-opacity: 0.8;
+}
+
+.numPuntuacion{
+    -fx-text-fill: white;
+    -fx-background-radius: 25px;
+    -fx-background-color: #5cb85c;
+    -fx-alignment: center;
+    -fx-font-size: 15px;
+}
+
+.nombreActividad {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.labelDestacar{
+    -fx-font-size: 15px;
+}
+
+.destacar {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////
+///////////////////////////    BLOQUES    //////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////*/
+
+.menuLateral {
+    -fx-background-color:  #707070;
+}
+
+.panel {
+    -fx-background-color: white;
+}
+
+.sombraGrid:hover{
+    -fx-effect: dropshadow(three-pass-box,  black, 10, 0.0, 4px,4px);
+}
+.sombraGrid{
+    -fx-effect: dropshadow(three-pass-box,  grey, 10, 0.0, 4px,4px);
+}
+
+.sombraSeparador{
+    -fx-effect: dropshadow(three-pass-box,  black, 10, 0.0, 4px,4px);
+}
+
+.columnaCentrada{
+    -fx-alignment: CENTER;
+}
+
+.cursorMano{
+    -fx-cursor: hand;
+}
+
+.bordeImagenRojo{
+    -fx-effect: dropshadow(three-pass-box,  red, 10, 0.0, 4px,4px);
+}
+
+

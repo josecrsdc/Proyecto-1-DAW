@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+
+<AnchorPane fx:id="panelRoot" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="900.0" stylesheets="@../css/estilos.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vistas.PageHomeController">
+   <children>
+      <Pane fx:id="panelBase" layoutX="200.0" layoutY="45.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="470.0" prefWidth="700.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="104.0" layoutY="178.0" text="Barcelona Family Friendly" />
+            <ImageView fitHeight="172.0" fitWidth="587.0" layoutX="91.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/imagenes/BarcelonaBANNER.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="103.0" layoutY="202.0" prefHeight="71.0" prefWidth="494.0" text="Barcelona es una ciudad repleta de pasatiempos para hacer en familia. En cada rincón se pueden encontrardistracciones de todo tipo para no aburrirse. Se puede disfrutar del mar y al mismo tiempo de la montaña. O para los más atrevidos, se puede pasar la tarde sobre una montaña rusa, observar tiburones, acariciar delfines y descubrir nuevas especies marítimas." textAlignment="JUSTIFY" wrapText="true" />
+            <Label layoutX="103.0" layoutY="284.0" maxWidth="494.0" prefHeight="71.0" prefWidth="494.0" text="Y todo esto (aunque parezca imposible), se puede hacer sin necesidad de tener que ir con la fiambrera en la mochila, ya que una buena parte de los restaurantes de Barcelona están considerados Family Friendly;para poder divertirse al máximo sin tener que sufrir por dónde comer." textAlignment="JUSTIFY" wrapText="true" />
+            <ImageView fitHeight="36.0" fitWidth="84.0" layoutX="104.0" layoutY="411.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/imagenes/barcelona-turisme.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="28.0" fitWidth="84.0" layoutX="308.0" layoutY="416.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/imagenes/logo_urbana.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="40.0" layoutX="543.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/imagenes/escut%20culturalTransparent.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="35.0" layoutY="383.0" text="Contactos de interés:" />
+            <Line endX="557.0" layoutX="125.0" layoutY="373.0" startX="-107.0" styleClass="sombraSeparador" />
+         </children></Pane>
+      <VBox fx:id="panelMenuPrincipal" alignment="CENTER" prefHeight="515.0" prefWidth="200.0" style="-fx-background-color: #707070;" styleClass="menuLateral">
+         <children>
+            <Pane prefHeight="44.0" prefWidth="200.0" />
+            <ImageView fitHeight="54.0" fitWidth="206.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../recursos/imagenes/logo.png" />
+               </image>
+            </ImageView>
+            <Pane prefHeight="28.0" prefWidth="200.0" />
+            <Button fx:id="bMenuInicio" mnemonicParsing="false" onMouseClicked="#home" prefHeight="52.0" prefWidth="130.0" text="Home">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="buttonMenu" />
+                  <String fx:value="sombraGrid" />
+               </styleClass></Button>
+            <Button fx:id="bDropDownMenu" mnemonicParsing="false" onAction="#desplegarActividades" prefHeight="52.0" prefWidth="130.0" text="Actividades">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../recursos/imagenes/icons8_expand_arrow_24px_1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="buttonMenu" />
+                  <String fx:value="sombraGrid" />
+               </styleClass>
+            </Button>
+            <Button fx:id="bMenuDondeDormir" mnemonicParsing="false" onMouseClicked="#dondeDormir" prefHeight="52.0" prefWidth="104.0" text="Dónde Dormir" visible="false">
+               <VBox.margin>
+                  <Insets left="25.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="buttonMenuDesplegable" />
+                  <String fx:value="sombraGrid" />
+               </styleClass></Button>
+            <Button fx:id="bMenuDondeComer" mnemonicParsing="false" onMouseClicked="#dondeComer" prefHeight="52.0" prefWidth="104.0" text="Dónde Comer" visible="false">
+               <VBox.margin>
+                  <Insets left="25.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="buttonMenuDesplegable" />
+                  <String fx:value="sombraGrid" />
+               </styleClass></Button>
+            <Button fx:id="bMenuQueHacer" mnemonicParsing="false" onMouseClicked="#queHacer" prefHeight="52.0" prefWidth="104.0" text="Qué Hacer" visible="false">
+               <VBox.margin>
+                  <Insets left="25.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <styleClass>
+                  <String fx:value="buttonMenuDesplegable" />
+                  <String fx:value="sombraGrid" />
+               </styleClass></Button>
+            <Button fx:id="bMenuGestion" mnemonicParsing="false" onMouseClicked="#gestionActividades" prefHeight="52.0" prefWidth="104.0" text="Gestión" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets left="25.0" />
+               </VBox.margin>
+               <styleClass>
+                  <String fx:value="buttonMenuDesplegable" />
+                  <String fx:value="sombraGrid" />
+               </styleClass>
+            </Button>
+            <Pane prefHeight="35.0" prefWidth="200.0" />
+            <Pane prefHeight="129.0" prefWidth="200.0">
+               <children>
+                  <Polygon fill="#f8f8f8" layoutX="100.0" layoutY="81.0" points="-394.0, 40.0, 100.0, 40.0, 100.0, -72.0" stroke="#6e363600" strokeLineCap="ROUND" strokeType="INSIDE" />
+                  <Label layoutX="48.0" layoutY="83.0" prefHeight="17.0" prefWidth="84.0" text="Conexión BD:" />
+                  <ImageView fx:id="imgConexion" fitHeight="18.0" fitWidth="21.0" layoutX="132.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" styleClass="sombraSeparador">
+                     <image>
+                        <Image url="@../recursos/imagenes/conexionOFF.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="trianguloAlarma" fitHeight="61.0" fitWidth="40.0" layoutX="80.0" layoutY="35.0" onMouseClicked="#home" pickOnBounds="true" styleClass="sombraGrid">
+                     <image>
+                        <Image url="@../recursos/imagenes/icons8_sort_up_52px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="recargarBD" fitHeight="27.0" fitWidth="22.0" layoutX="91.0" layoutY="55.0" onMouseClicked="#home" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../recursos/imagenes/icons8_data_backup_52px.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children></Pane>
+         </children>
+      </VBox>
+      <Pane fx:id="panelTopBar" layoutX="200.0" maxWidth="1.7976931348623157E308" prefHeight="45.0" prefWidth="700.0" styleClass="topBar">
+         <children>
+            <Label fx:id="tituloVentana" layoutX="330.0" layoutY="12.0" text="Home" textAlignment="CENTER" />
+            <ImageView fx:id="bDetallesPack" fitHeight="22.0" fitWidth="23.0" layoutX="623.0" layoutY="12.0" onMouseClicked="#panelDetallesPack" pickOnBounds="true" preserveRatio="true" styleClass="sombraGrid">
+               <image>
+                  <Image url="@../recursos/imagenes/carrito.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label id="cantidadCarrito" fx:id="cantidadCarrito" layoutX="634.0" layoutY="3.0" onMouseClicked="#panelDetallesPack" prefHeight="21.0" prefWidth="21.0" text="0" visible="false">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+            <ImageView fx:id="closeApp" fitHeight="26.0" fitWidth="22.0" layoutX="664.0" layoutY="12.0" onMouseClicked="#cerrarAplicacion" pickOnBounds="true" preserveRatio="true" styleClass="sombraGrid">
+               <image>
+                  <Image url="@../recursos/imagenes/icons8_close_window_48px.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children></Pane>
+   </children>
+</AnchorPane>
