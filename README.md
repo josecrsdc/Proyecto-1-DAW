@@ -11,3 +11,6 @@ sus respectivas materias ( Programación, Entorno de Desarrollos, Lenguajes de M
 
 Todo esto se llevó a cabo durante la pandemia COVID-19, a distancia y sin llegar a obtener todos los conocimientos del curso 
 presencial, así que se realizó un profundo trabajo de investigación por nuestra parte.
+
+Enlace del video presentación:
+https://youtu.be/wWzmu0zFpyE
