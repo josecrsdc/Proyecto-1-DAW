@@ -1,5 +1,11 @@
 # Proyecto-1-DAW
 App para agencia de turismo ( Proyecto grupal fin de 1er curso Grado Superior Desarrollo de Aplicaciones Web )
+Desarrolladores:
+  - Jesús García
+  - Isabel Mallach
+  - Ivan Mompó
+  - Alvaro Torregrosa
+  - José Carlos Rodríguez
 
 Aplicación sencilla ( sin mucha funcionalidad ) que permite gestionar una BD de actividades en la ciudad de Barcelona y 
 que a su vez facilita la creación de packs para su posterior comercialización.
